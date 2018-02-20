@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Geek Shop</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="formChecker.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Geek Shop</h1>
+        </header>
+        <section id="cart-section">
+            <form id="cart" method="POST" action="customerBackend.php" onSubmit=" return validateForm()">
+               <!-- <div id="credentials" class="default-back red-back">-->
+                    <h2>Credentials</h2>
+                    <input id="username" name="username"type="text" placeholder="Username"><br>
+                    <input id="password" name="password" type="password" placeholder="Password" >
+                <!--</div>-->
+                <!-- Items -->
+                <div id="item-list" class="default-back yellow-back">
+                    <h2>Shop</h2>
+                    <div id="item1" class="item-container">
+                        <p>Bananas</p>
+                        <p>Price: $6</p>
+                        <input name="item1-amount" class="item-amount" type="number" value="0" >
+                        <input name="item1-hidden" type="hidden" value="Item 1#6" >
+                    </div>
+                    <div id="item2" class="item-container">
+                        <p>Baseball bat</p>
+                        <p>Price: $16</p>
+                        <input name="item2-amount" class="item-amount" type="number" value="0" >
+                        <input name="item2-hidden" type="hidden" value="Item 2#16" >
+                    </div>
+                    <div id="item3" class="item-container">
+                        <p>Small TV</p>
+                        <p>Price: $56</p>
+                        <input name="item3-amount" class="item-amount" type="number" value="0" >
+                        <input name="item3-hidden" type="hidden" value="Item 2#56" >
+                    </div>
+                </div>
+                <!-- End Items -->
+                <!-- Shipping -->
+                <div id="shipping-options" class="default-back red-back">
+                    <h2>Shipping</h2>
+                    <input id="shipping-7" name="shipping-radio" type="radio" value="7 Days"> 7 days ($0.00)<br>
+                    <input id="shipping-3" name="shipping-radio" type="radio" value="3 Days"> 3 days ($5.00)<br>
+                    <input id="shipping-over" name="shipping-radio" type="radio" value="Over night"> Over night ($50.00)<br>
+                    <input id="shipping-price" name="shipping-price" type="hidden" value="-1" >
+                </div>
+                <!-- End Shipping -->
+                <!-- Submit/Reset -->
+                <div id="controls" class="default-back yellow-back">
+                    <input id="reset-button" class="red-button" type="button" value="Reset" onClick="resetForm()">
+                    <input id="submit" class="red-button" type="submit" value="Purchase">
+                </div>
+                <!-- End Submit/Reset -->
+                </form>
+        </section>
+    </body>
+</html>

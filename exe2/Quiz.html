@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Quiz</title>
+		<h1> MY QUIZ </h1>
+		<meta charset="utf-8"> 
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+
+		<form id="q1" method="POST" action="Quiz.php">
+			<p>Question 1: What is the capital of Portugal?</p>
+ 			<input type="radio" name="answer1" value="Madrid" checked>a) Madrid<br>
+			<input type="radio" name="answer1" value="Lisbon">b) Lisbon<br>
+			<input type="radio" name="answer1" value="Paris">c) Paris <br>
+			<input type="radio" name="answer1" value="Berlin">d) Berlin
+		
+			<p>Question 2: Which of the following is not a dog breed?</p>
+ 			<input type="radio" name="answer2" value="German Shepherd" checked>a) German Shepherd<br>
+			<input type="radio" name="answer2" value="Great Dane">b) Great Dane<br>
+			<input type="radio" name="answer2" value="Monkey Face">c) Monkey Face <br>
+			<input type="radio" name="answer2" value="Shiba Inu">d) Shiba Inu
+	
+			<p>Question 3: Is Europe a continent?</p>
+ 			<input type="radio" name="answer3" value="Yes" checked>a) Yes<br>
+			<input type="radio" name="answer3" value="No">b) No<br>
+			<input type="radio" name="answer3" value="Only on Weekends">c) Only on Weekends <br>
+			<input type="radio" name="answer3" value="Only on Weekdays">d) Only on Weekdays
+		
+			<p>Question 4: Tweety bird tawt he taw a what?</p>
+ 			<input type="radio" name="answer4" value="Romulan" checked>a) Romulan<br>
+			<input type="radio" name="answer4" value="He tawt he taw a Puddy Tat">b) He tawt he taw a Puddy Tat<br>
+			<input type="radio" name="answer4" value="Spanish Inquisition">c) The Spanish Inquisition <br>
+			<input type="radio" name="answer4" value="Himself">d) Himself
+	
+			<p>Question 5: Is this quiz awesome?</p>
+ 			<input type="radio" name="answer5" value="It's Acceptable" checked>a) It's Acceptable <br>
+			<input type="radio" name="answer5" value="Kind of">b) Kind of<br>
+			<input type="radio" name="answer5" value="No">c) No <br>
+			<input type="radio" name="answer5" value="Yes">d) Yes
+
+			<br><br>
+		
+			<input type="submit" class="button" name="submit" value="Submit!" />
+		</form>
+
+		<?php include 'Quiz.php';?>		
+		
+		
+	</body>
+
+</html>
